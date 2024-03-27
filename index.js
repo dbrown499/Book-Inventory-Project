@@ -26,7 +26,7 @@ bookForm.addEventListener("submit", (e) => {
         price: price.value,
         stock: stock.value
     };
-    return createBook(bookObj);
+    createBook(bookObj);
 });
 
 
