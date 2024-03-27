@@ -7,7 +7,7 @@ let bookList = document.querySelector(".book-log");
 garbageBin.forEach(trashButton => {
     trashButton.addEventListener("click", (e) => {
         e.target.parentElement.remove();
-        alert ("Book List Has been Updated");
+        alert ("Book Item Will Be Removed");
         
     });
 });
@@ -16,7 +16,7 @@ garbageBin.forEach(trashButton => {
 bookForm.addEventListener("submit", (e) => {
     e.preventDefault();
     alert ("Book List Has been Updated");
-    });
+
 
     const [title, author, url, price, stock] = e.target;
     const bookObj = {
@@ -28,7 +28,6 @@ bookForm.addEventListener("submit", (e) => {
     };
     createBook(bookObj);
 });
-
 
 function createBook(makeObj) {
     const bookDiv = document.createElement("div");
