@@ -16,11 +16,6 @@ garbageBin.forEach(trashButton => {
 bookForm.addEventListener("submit", (e) => {
     e.preventDefault();
     alert ("Book List Has been Updated");
-
-    garbageBin.forEach(trashButton => {
-        trashButton.addEventListener("click", (e) => {
-            e.target.parentElement.remove();
-        });
     });
 
     const [title, author, url, price, stock] = e.target;
@@ -56,7 +51,11 @@ function createBook(makeObj) {
     const trash = document.createElement("img");
     trash.setAttribute("id", "garbage");
     trash.setAttribute("src", "https://cdn0.iconfinder.com/data/icons/app-user-interface-line-7/48/Primary-Challenge04_App_User_Interface-Line__Solid-48px-03-512.png");
-    trash.setAttribute("alt", "garbage bin")
+    trash.setAttribute("alt", "garbage bin");
+
+    trash.addEventListener("click", (e) => {
+            e.target.parentElement.remove();
+        });
 
     const lineBreak = document.createElement("hr");
     lineBreak.setAttribute("id", "between-books");
