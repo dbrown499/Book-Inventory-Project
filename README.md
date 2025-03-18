@@ -3,6 +3,11 @@ Booktory is a simple web application designed for managing a book inventory. Thr
 
 Website: https://dbrown499.github.io/Book-Inventory-Project/
 
+React Version: https://github.com/dbrown499/React-Book-Inventory
+
+![Alt text](images.png/website.png)
+
+
 This repository contains the core framework of Booktory.
 
 # 🚀  Getting Started
